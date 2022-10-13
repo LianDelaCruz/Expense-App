@@ -1,18 +1,21 @@
 import React, { Fragment } from "react";
-import Welcome from "./components/welcome/Welcome";
-import UserForm from "./components/userform/userForm";
 import Deposit from "./components/depositForm/DespositForm";
+import Withdraw from "./components/withdrawFrom/WithdrawForm";
 
 class App extends React.Component {
-  showInConsole = (show) => {
-    console.log(show)
+
+  saveDeposit(amount){
+    console.log(amount)
+  }
+
+  saveWithdrawn(amount) {
+    console.log(amount)
   }
   render() {
     return(
     <Fragment>
-      <UserForm showInConsole={this.showInConsole}/>
-      <Deposit/>
-      <Welcome/>
+      <Deposit onSubmit={this.saveDeposit}/>
+      <Withdraw onSubmit={this.saveWithdrawn}/>
     </Fragment>
     )
   }

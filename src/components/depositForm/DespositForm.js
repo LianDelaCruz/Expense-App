@@ -1,24 +1,23 @@
 import React from "react";
 
 export default class Deposit extends React.Component {
-    depositInput = '';
+  depositAmount = 0;
 
-    submitDeposit = (e) => {
-        e.preventDefault()
-        console.log(this.depositInput)
- }
   render() {
     return (
-    <div>
-      <form onSubmit ={ (event)=>this.submitDeposit(event)}>
-        <input
-          type="number"
-          placeholder="Amount to deposit"
-          onChange={(e) => (this.depositInput = e.target.value)}
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    )
+      <div>
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          this.props.onSubmit(this.depositAmount)
+          }}>
+          <input
+            type="number"
+            placeholder="Amount to deposit"
+            onChange={(e) => (this.depositAmount = e.target.value)}
+          />
+          <input type="submit" />
+        </form>
+      </div>
+    );
   }
 }
