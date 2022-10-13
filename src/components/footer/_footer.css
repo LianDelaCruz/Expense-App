@@ -1,0 +1,18 @@
+.footer-cont {
+    height: 100px;
+    background-color: hotpink;
+    width: 100%;
+    padding-top: 10px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position:absolute
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 50px;
+}

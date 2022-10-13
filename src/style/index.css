@@ -1,0 +1,7 @@
+ @import'./App.css'; /*this is how you link css to index.css which is the main css file under folder STYLE*/
+ 
+ @import '../components/welcome/_welcome.css'; /*We wrote two dots because we need to get inside the component/welcome folder*/
+
+ @import '../components/header/_header.css';
+
+ @import '../components/footer/_footer.css';
