@@ -5,17 +5,21 @@ export default class Deposit extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={(e) => {
-          e.preventDefault();
-          this.props.onSubmit(this.depositAmount)
-          }}>
+      <div className="container">
+        <form
+          className="form-content"
+          onSubmit={(e) => {
+            e.preventDefault();
+            this.props.onSubmit(this.depositAmount);
+          }}
+        >
           <input
+            className="content"
             type="number"
             placeholder="Amount to deposit"
             onChange={(e) => (this.depositAmount = e.target.value)}
           />
-          <input type="submit" />
+          <input className="content-button" type="submit" />
         </form>
       </div>
     );

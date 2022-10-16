@@ -3,3 +3,7 @@
  @import '../components/header/_header.css';
 
  @import '../components/footer/_footer.css';
+
+ @import '../components/depositForm/_depositForm.css';
+
+ @import '../components/withdrawFrom/_withdrawForm.css'

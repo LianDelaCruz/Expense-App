@@ -1,0 +1,24 @@
+.withdraw-container {
+    border: 1px black solid;
+    padding: 30px;
+    background-color: beige;
+    width: 40vw;
+    height: 90px;
+    margin: 50px;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.withdraw-content {
+    margin: 5px;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.content-button {
+    font-size: 20px;
+}

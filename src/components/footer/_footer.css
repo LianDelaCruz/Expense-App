@@ -1,5 +1,5 @@
 .footer-cont {
-    height: 100px;
+    height: 50px;
     background-color: hotpink;
     width: 100%;
     padding-top: 10px;
@@ -14,5 +14,5 @@
 a {
     text-decoration: none;
     color: blanchedalmond;
-    font-size: 50px;
+    font-size: 30px;
 }

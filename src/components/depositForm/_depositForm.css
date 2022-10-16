@@ -1,0 +1,23 @@
+.container {
+    border: 1px black solid;
+    padding: 30px;
+    background-color: beige;
+    width: 40vw;
+    margin: 50px;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content {
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.content-button {
+    font-size: 20px;
+}
+
