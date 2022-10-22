@@ -43,8 +43,8 @@ export default class Withdraw extends React.Component {
 
   render() {
     return (
-      <div className="withdraw-container">
-        <form onSubmit={this.submitWithdrawInfo}>
+      <div className="form-wrapper">
+        <form className="withdraw-container" onSubmit={this.submitWithdrawInfo}>
           <input
             className="withdraw-content"
             type="text"
@@ -57,7 +57,11 @@ export default class Withdraw extends React.Component {
             onChange={this.getWithdrawInfo}
             placeholder="Amount to withdraw"
           />
-          <input className="content-button" type="submit" value="submit" />
+          <input
+            className="content-button button1"
+            type="Submit"
+            value="Submit"
+          />
         </form>
       </div>
     );

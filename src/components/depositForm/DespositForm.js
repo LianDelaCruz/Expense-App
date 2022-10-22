@@ -15,17 +15,15 @@ export default class Deposit extends React.Component {
   
   render() {
     return (
-      <div className="container">
-        <form
-          onSubmit={this.submitAmount}
-        >
+      <div className="form-wrapper">
+        <form className="deposit-container" onSubmit={this.submitAmount}>
           <input
-            className="content"
+            className="deposit-content"
             type="number"
             placeholder="Amount to deposit"
             onChange={this.getDepositAmount}
           />
-          <input className="content-button" type="submit" />
+          <input className="content-button button1" type="submit" />
         </form>
       </div>
     );

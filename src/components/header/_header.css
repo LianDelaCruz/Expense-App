@@ -1,11 +1,13 @@
 .header-cont {
-    height: 50px;
+    height: 10vh;
     width: 100%;
-    background-color: mediumturquoise;
-
+    background-color: #a39171;
+    position: absolute;
 }
 
-.logo {
-    width: 90px;
-    height: 35px;
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 20px;
 }

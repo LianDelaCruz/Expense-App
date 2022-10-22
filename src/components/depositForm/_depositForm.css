@@ -1,2 +1,42 @@
 
+.form-wrapper {
+    border: 1px #000;
+    margin: 30px;
+    background-color: #ABC4AB;
+    border-radius: 5px;
+    padding: 30px;
+}
 
+.deposit-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.deposit-content {
+    padding: 21px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px ;
+}
+
+.content-button {
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #DCC9B6; 
+    color: black; 
+    border: 1px #000;
+}
+ 
+.content-button:hover {
+    background-color: #4f5a4f;
+    color: white;
+}
+  

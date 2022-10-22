@@ -58,19 +58,35 @@ class App extends React.Component {
       : 0;
     return (
       <Fragment>
-        <h1>Budget: {budget}</h1>
-        <h1>Balance: {balance}</h1>
-        <h1>Withdrawn: {withdraw}</h1>
-        <Deposit saveDeposit={this.saveDeposit}></Deposit>
-        <Withdraw saveWithdrawn={this.saveWithdrawn} />
-        <ul>{this.getItemList.map((value,index)=>{
-          return(
-            <li key={index}>
-              {value.productName}
-              {value.amount}
-            </li>
-          )
-        })}</ul>
+        <div className="main-wrapper">
+          <div className="inputs-container">
+            <Deposit saveDeposit={this.saveDeposit}></Deposit>
+            <Withdraw saveWithdrawn={this.saveWithdrawn} />
+          </div>
+          <div className="result-wrapper">
+            <div className="card">
+              <h3>Budget: {budget}</h3>
+              <h3>Balance: {balance}</h3>
+              <h3>Withdrawn: {withdraw}</h3>
+            </div>
+            <ul className="list-container">
+              {this.getItemList.map((value, index) => {
+                return (
+                  <li className="items-list" key={index}>
+                    <div className="product-name product-wrapper">
+                      <h4 className="product">Product:</h4>
+                      <h3 className="product">{value.productName}</h3>
+                    </div>
+                    <div className="product-amount product-wrapper">
+                      <h4 className="product">Amount:</h4>
+                      <h3 className="product">{value.amount} kr</h3>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
       </Fragment>
     );
   }
